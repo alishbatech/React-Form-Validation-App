@@ -93,9 +93,9 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 flex items-center justify-center p-5">
+    <div className="min-h-screen w-full bg-gradient-to-br from-pink-700 via-blue-500 to-pink-700 flex items-center justify-center p-5">
 
-      <div className="w-full max-w-md bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-8 border border-white/20">
+      <div className="w-full max-w-md bg-white/20 backdrop-blur-xl rounded-3xl shadow-2xl  p-8 border border-white/20">
 
         <h1 className="text-4xl font-bold text-center text-white mb-8">
           Create Account
@@ -110,9 +110,9 @@ function App() {
               value={userName}
               onChange={(e) => setUserName(e.target.value)}
               onBlur={validName}
-              className="w-full px-5 py-3 rounded-xl bg-white/90 outline-none focus:ring-4 focus:ring-blue-400 transition"
+              className="w-full px-5 py-3 rounded-xl bg-white/90 outline-none focus:ring-4 focus:ring-blue-500 transition"
             />
-            <p className="text-red-400 text-sm mt-1">
+            <p className="text-red-800 text-sm mt-1">
               {errorUserName}
             </p>
           </div>
@@ -124,9 +124,9 @@ function App() {
               value={userEmail}
               onChange={(e) => setEmail(e.target.value)}
               onBlur={validEmail}
-              className="w-full px-5 py-3 rounded-xl bg-white/90 outline-none focus:ring-4 focus:ring-blue-400 transition"
+              className="w-full px-5 py-3 rounded-xl bg-white/90 outline-none focus:ring-4 focus:ring-blue-500 transition"
             />
-            <p className="text-red-400 text-sm mt-1">
+            <p className="text-red-800 text-sm mt-1">
               {errorEmail}
             </p>
           </div>
@@ -138,9 +138,9 @@ function App() {
               value={userPassword}
               onChange={(e) => setPassword(e.target.value)}
               onBlur={validPass}
-              className="w-full px-5 py-3 rounded-xl bg-white/90 outline-none focus:ring-4 focus:ring-blue-400 transition"
+              className="w-full px-5 py-3 rounded-xl bg-white/90 outline-none focus:ring-4 focus:ring-blue-500 transition"
             />
-            <p className="text-red-400 text-sm mt-1">
+            <p className="text-red-800 text-sm mt-1">
               {errorPass}
             </p>
           </div>
@@ -152,16 +152,16 @@ function App() {
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               onBlur={confirmPass}
-              className="w-full px-5 py-3 rounded-xl bg-white/90 outline-none focus:ring-4 focus:ring-blue-400 transition"
+              className="w-full px-5 py-3 rounded-xl bg-white/90 outline-none focus:ring-4 focus:ring-blue-500 transition"
             />
-            <p className="text-red-400 text-sm mt-1">
+            <p className="text-red-800 text-sm mt-1">
               {errorConfirmPass}
             </p>
           </div>
 
           <button
             type="submit"
-            className="mt-3 py-3 rounded-xl font-bold text-lg transition duration-300 bg-blue-500 hover:bg-blue-600 text-white cursor-pointer active:scale-95"
+            className="mt-3 py-3 rounded-2xl font-bold text-lg transition duration-300 bg-blue-500 hover:bg-blue-600 text-white cursor-pointer active:scale-95"
           >
             Submit
           </button>
