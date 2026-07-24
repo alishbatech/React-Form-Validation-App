@@ -70,7 +70,7 @@ src/
 
 📸 Preview
 
-![Create Account Preview](/creat-account-img.png)
+![Create Account Preview](./public/creat-account-img.png)
 
 ## Future Improvements
 
